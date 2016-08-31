@@ -1,0 +1,11 @@
+.borderIt {
+    border-radius: 10px;
+    border: 1px black solid;
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+
+/*button {
+    display: inline-block;
+}*/
