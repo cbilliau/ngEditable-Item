@@ -1,4 +1,10 @@
-<div>
-    <button ng-click="scope.change" type="submit" name="editSave" class="btn btn-primary btn-lg pull-right">Edit</button>
-    <button type="submit" name="editSave" id="save" class="btn btn-primary btn-lg pull-right">Save</button>
+<div class="editable-content"
+	ng-init="editableStatus = false"
+	ng-transclude
+	contenteditable="{{ editableStatus }}"
+	ng-class = "{ editable: editableStatus }" >
 </div>
+<div class="editable-controls">
+    <button ng-click="editableStatus = true" ng-show="!editableStatus" class="btn btn-primary btn-lg pull-right">Edit</button>
+    <button ng-click="editableStatus = false" ng-show="editableStatus" id="save" class="btn btn-primary btn-lg pull-right">Save</button>
+</div >
