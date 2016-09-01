@@ -1,0 +1,6 @@
+{
+  "name": "ngeditable-item",
+  "devDependencies": {
+    "angular-mocks": "^1.5.8"
+  }
+}
